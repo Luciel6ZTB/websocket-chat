@@ -152,6 +152,8 @@
     function agregarMensaje(mensaje) {
       const messagesDiv = document.getElementById('messages');
       messagesDiv.innerHTML += `<p><strong>${mensaje}</strong></p>`;
+      // Desplazar el contenedor de mensajes hacia abajo
+      messagesDiv.scrollTop = messagesDiv.scrollHeight;
     }
   </script>
 
